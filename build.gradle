@@ -3,11 +3,10 @@ plugins {
 }
 
 group 'org.jenkins-ci.plugins'
-artifactId 'reportportal'
 version '0.2-SNAPSHOT'
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '4.0.1'
+    gradleVersion = '4.1'
     distributionUrl = "https://services.gradle.org/distributions/gradle-$gradleVersion-all.zip"
 }
 
