@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'org.jenkins-ci.plugins'
-version '0.2'
+version '0.3'
 
 task wrapper(type: Wrapper) {
     gradleVersion = '4.1'
