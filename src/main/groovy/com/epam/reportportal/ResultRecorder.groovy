@@ -85,6 +85,7 @@ class ResultRecorder extends Recorder {
             }
             build.addAction(new RPBuildAction(build, launch))
             launchJson.content.status == 'PASSED'
+            true
         } catch (Exception e) {
             e.printStackTrace()
             false
