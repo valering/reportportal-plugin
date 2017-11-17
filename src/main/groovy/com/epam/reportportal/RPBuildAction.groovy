@@ -44,6 +44,6 @@ class RPBuildAction implements BuildBadgeAction {
 
     @Override
     String getUrlName() {
-        'rp'
+        ''
     }
 }

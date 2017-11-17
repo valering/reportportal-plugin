@@ -21,7 +21,6 @@
 package com.epam.reportportal
 
 import groovy.json.JsonSlurper
-import groovy.util.logging.Slf4j
 import hudson.Extension
 import hudson.Launcher
 import hudson.model.AbstractBuild
@@ -36,7 +35,6 @@ import hudson.util.FormValidation
 import org.kohsuke.stapler.DataBoundConstructor
 import org.kohsuke.stapler.QueryParameter
 
-@Slf4j
 class ResultRecorder extends Recorder {
 
     String endpoint
