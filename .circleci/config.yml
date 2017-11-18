@@ -1,5 +1,4 @@
 defaults: &defaults
-  working_directory: /home/gradle
   docker:
     - image: gradle:4.3-jdk8
       environment:
@@ -11,7 +10,6 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - run: ls -la
-      - run: pwd
       - run: ./gradlew clean jpi
-
+      - store_artifacts:
+          path: ~/project/build/libs
