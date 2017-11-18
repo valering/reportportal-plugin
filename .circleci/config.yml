@@ -12,4 +12,4 @@ jobs:
       - checkout
       - run: ./gradlew clean jpi
       - store_artifacts:
-          path: ~/build/libs
+          path: ~/project/build/libs
