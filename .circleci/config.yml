@@ -1,5 +1,4 @@
 defaults: &defaults
-  working_directory: /home/gradle
   docker:
     - image: gradle:4.3-jdk8
       environment:
