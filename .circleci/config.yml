@@ -10,7 +10,6 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - run: ls -la
-      - run: pwd
       - run: ./gradlew clean jpi
-
+      - store_artifacts:
+          path: ~/build/libs
